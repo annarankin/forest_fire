@@ -1,0 +1,35 @@
+body {
+  font-size: 16px;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+  background: #EDEDED;
+  text-align: center;
+  padding: 1em;
+}
+.game-board {
+  width: 400px;
+  height: 400px;
+  background: url("img/grass.png");
+  margin: 0 auto;
+  position: relative;
+}
+.tree {
+  width: 75px;
+  height: 125px;
+  background: url('img/tree.png');
+  background-size: contain;
+  position: relative;
+}
+.tree.aflame::after {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  content: "";
+  top: 0px;
+  right: 0px;
+  background-image: url('img/fire.gif');
+  background-size: contain;
+  cursor: pointer;
+}
