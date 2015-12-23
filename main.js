@@ -58,7 +58,7 @@ game.start = function() {
     this.setFire(tree);
   }.bind(this));
 
-  this.counter = 15;
+  this.counter = 10;
   $('#counter').text(this.counter);
   
   this.treeFireInterval = window.setInterval(function() {
